@@ -1,0 +1,54 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Crystal Game</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<style>
+		body{
+			margin: auto;
+			text-align: center;
+			font-weight: bold;
+			font-size: 1.4em;
+		}
+		.crystals{
+			margin: 20px auto;
+			max-width: 600px;
+		}
+		#target, #score, #msg{
+			color: red;
+		}
+	
+	
+	</style>
+</head>
+<body>
+<div class="container">
+	<h1 class="jumbotron">Crystal Collector</h1>
+	
+	<div class="target well">
+	<p>Your target number is: </p>
+	<div id="target"></div>
+	</div>
+	
+	<div class="crystals">
+		<img id="blue" src="assets/images/blue.jpg" alt="blue">
+		<img id="green" src="assets/images/green.jpg" alt="green">
+		<img id="yellow" src="assets/images/yellow.jpg" alt="yellow">
+		<img id="red" src="assets/images/red.jpg" alt="red">
+	</div>
+	<div class="result well">
+		<p>Wins: <span id="wins"></span></p>
+		<p>Losses: <span id="losses"></span></p>
+		
+	</div>
+	
+	<div class="well">
+		<p>Your total score is:</p>
+		<div id="score"></div>
+		<h1 id="msg"></h1>
+	</div>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript" src="assets/js/script.js"></script>
+</div>
+</body>
+</html>
